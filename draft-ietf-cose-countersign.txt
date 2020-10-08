@@ -5,8 +5,8 @@
 COSE Working Group                                             J. Schaad
 Internet-Draft                                            August Cellars
 Intended status: Standards Track                         R. Housley, Ed.
-Expires: 10 April 2021                                    Vigil Security
-                                                          7 October 2020
+Expires: 11 April 2021                                    Vigil Security
+                                                          8 October 2020
 
 
       CBOR Object Signing and Encryption (COSE): Countersignatures
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 April 2021.
+   This Internet-Draft will expire on 11 April 2021.
 
 
 
@@ -53,7 +53,7 @@ Status of This Memo
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 1]
+Schaad & Housley          Expires 11 April 2021                 [Page 1]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 2]
+Schaad & Housley          Expires 11 April 2021                 [Page 2]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -165,7 +165,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 3]
+Schaad & Housley          Expires 11 April 2021                 [Page 3]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -221,7 +221,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 4]
+Schaad & Housley          Expires 11 April 2021                 [Page 4]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -277,7 +277,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 5]
+Schaad & Housley          Expires 11 April 2021                 [Page 5]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -333,7 +333,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 6]
+Schaad & Housley          Expires 11 April 2021                 [Page 6]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -389,7 +389,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 7]
+Schaad & Housley          Expires 11 April 2021                 [Page 7]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -445,7 +445,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 8]
+Schaad & Housley          Expires 11 April 2021                 [Page 8]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -501,7 +501,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                 [Page 9]
+Schaad & Housley          Expires 11 April 2021                 [Page 9]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -557,7 +557,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 10]
+Schaad & Housley          Expires 11 April 2021                [Page 10]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -613,7 +613,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 11]
+Schaad & Housley          Expires 11 April 2021                [Page 11]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -669,7 +669,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 12]
+Schaad & Housley          Expires 11 April 2021                [Page 12]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -725,7 +725,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 13]
+Schaad & Housley          Expires 11 April 2021                [Page 13]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -781,7 +781,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 14]
+Schaad & Housley          Expires 11 April 2021                [Page 14]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -837,7 +837,7 @@ Internet-Draft               COSE Structure                 October 2020
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 15]
+Schaad & Housley          Expires 11 April 2021                [Page 15]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -893,7 +893,7 @@ Appendix A.  Examples
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 16]
+Schaad & Housley          Expires 11 April 2021                [Page 16]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -949,7 +949,7 @@ A.1.1.  Countersignature
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 17]
+Schaad & Housley          Expires 11 April 2021                [Page 17]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -1005,7 +1005,7 @@ A.2.1.  Countersignature on Encrypted Content
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 18]
+Schaad & Housley          Expires 11 April 2021                [Page 18]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -1061,7 +1061,7 @@ A.4.  Examples of MACed Messages
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 19]
+Schaad & Housley          Expires 11 April 2021                [Page 19]
 
 Internet-Draft               COSE Structure                 October 2020
 
@@ -1117,4 +1117,4 @@ Authors' Addresses
 
 
 
-Schaad & Housley          Expires 10 April 2021                [Page 20]
+Schaad & Housley          Expires 11 April 2021                [Page 20]
