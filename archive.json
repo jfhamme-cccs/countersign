@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2020-10-08T00:11:09.018647+00:00",
+  "timestamp": "2020-10-11T00:14:03.916411+00:00",
   "repo": "cose-wg/countersign",
   "labels": [
     {
@@ -50,5 +50,34 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTAwMDU3Nzg4",
+      "title": "Add Russ Housley as a document editor",
+      "url": "https://github.com/cose-wg/countersign/pull/1",
+      "state": "MERGED",
+      "author": "russhousley",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Add Russ Housley as a document editor.  No changes to the body of the document.",
+      "createdAt": "2020-10-08T16:50:56Z",
+      "updatedAt": "2020-10-08T16:53:29Z",
+      "baseRepository": "cose-wg/countersign",
+      "baseRefName": "main",
+      "baseRefOid": "edefb4fc3ac6116697d5391b08b2cacbcb315582",
+      "headRepository": "cose-wg/countersign",
+      "headRefName": "new_editor",
+      "headRefOid": "2fa749c4431a45c1f7249c04bbb4e3875b965464",
+      "closedAt": "2020-10-08T16:51:44Z",
+      "mergedAt": "2020-10-08T16:53:29Z",
+      "mergedBy": "russhousley",
+      "mergeCommit": {
+        "oid": "a83d32177b26acac684baf31a778028ae7a17f7d"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
