@@ -5,8 +5,8 @@
 COSE Working Group                                             J. Schaad
 Internet-Draft                                            August Cellars
 Intended status: Standards Track                         R. Housley, Ed.
-Expires: 10 April 2021                                    Vigil Security
-                                                          7 October 2020
+Expires: 20 May 2021                                      Vigil Security
+                                                        16 November 2020
 
 
       CBOR Object Signing and Encryption (COSE): Countersignatures
@@ -45,18 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 April 2021.
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 1]
-
-Internet-Draft               COSE Structure                 October 2020
-
+   This Internet-Draft will expire on 20 May 2021.
 
 Copyright Notice
 
@@ -74,45 +63,33 @@ Copyright Notice
 
 Table of Contents
 
-   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
-     1.1.  Requirements Terminology  . . . . . . . . . . . . . . . .   3
-     1.2.  CBOR Grammar  . . . . . . . . . . . . . . . . . . . . . .   4
-     1.3.  Document Terminology  . . . . . . . . . . . . . . . . . .   4
-   2.  Countersignature Header Parameters  . . . . . . . . . . . . .   5
-   3.  Version 2 Countersignatures . . . . . . . . . . . . . . . . .   6
-     3.1.  Full Countersignatures  . . . . . . . . . . . . . . . . .   7
-     3.2.  Abbreviated Countersignatures . . . . . . . . . . . . . .   8
-     3.3.  Signing and Verification Process  . . . . . . . . . . . .   8
-   4.  CBOR Encoding Restrictions  . . . . . . . . . . . . . . . . .  10
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  10
-     5.1.  CBOR Tag Assignment . . . . . . . . . . . . . . . . . . .  10
-     5.2.  COSE Header Parameters Registry . . . . . . . . . . . . .  11
-   6.  Security Considerations . . . . . . . . . . . . . . . . . . .  11
-   7.  Implementation Status . . . . . . . . . . . . . . . . . . . .  13
-     7.1.  Author's Versions . . . . . . . . . . . . . . . . . . . .  14
-     7.2.  COSE Testing Library  . . . . . . . . . . . . . . . . . .  14
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  15
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  15
-     8.2.  Informative References  . . . . . . . . . . . . . . . . .  15
-   Appendix A.  Examples . . . . . . . . . . . . . . . . . . . . . .  16
-     A.1.  Examples of Signed Messages . . . . . . . . . . . . . . .  17
-       A.1.1.  Countersignature  . . . . . . . . . . . . . . . . . .  17
-     A.2.  Examples of Enveloped Messages  . . . . . . . . . . . . .  18
-       A.2.1.  Countersignature on Encrypted Content . . . . . . . .  18
-     A.3.  Examples of Encrypted Messages  . . . . . . . . . . . . .  19
-     A.4.  Examples of MACed Messages  . . . . . . . . . . . . . . .  19
-     A.5.  Examples of MAC0 Messages . . . . . . . . . . . . . . . .  20
-   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .  20
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  20
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 2]
-
-Internet-Draft               COSE Structure                 October 2020
-
+   1.  Introduction
+     1.1.  Requirements Terminology
+     1.2.  CBOR Grammar
+     1.3.  Document Terminology
+   2.  Countersignature Header Parameters
+   3.  Version 2 Countersignatures
+     3.1.  Full Countersignatures
+     3.2.  Abbreviated Countersignatures
+     3.3.  Signing and Verification Process
+   4.  CBOR Encoding Restrictions
+   5.  IANA Considerations
+     5.1.  CBOR Tag Assignment
+     5.2.  COSE Header Parameters Registry
+   6.  Security Considerations
+   7.  Implementation Status
+     7.1.  Author's Versions
+     7.2.  COSE Testing Library
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Appendix A.  Examples
+     A.1.  Examples of Signed Messages
+       A.1.1.  Countersignature
+     A.2.  Examples of Enveloped Messages
+       A.2.1.  Countersignature on Encrypted Content
+   Acknowledgments
+   Authors' Addresses
 
 1.  Introduction
 
@@ -163,13 +140,6 @@ Internet-Draft               COSE Structure                 October 2020
    14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 3]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
 1.2.  CBOR Grammar
 
    CBOR grammar in the document is presented using CBOR Data Definition
@@ -218,14 +188,6 @@ Internet-Draft               COSE Structure                 October 2020
    The term 'byte string' is used for sequences of bytes, while the term
    'text string' is used for sequences of characters.
 
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 4]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
 2.  Countersignature Header Parameters
 
    This section defines a set of common header parameters.  A summary of
@@ -244,16 +206,16 @@ Internet-Draft               COSE Structure                 October 2020
       on version 2 countersignatures are found in Section 3.
 
    +===========+=====+========================+==========+=============+
-   | Name      |Label| Value Type             | Value    | Description |
+   |Name       |Label|Value Type              | Value    | Description |
    |           |     |                        | Registry |             |
    +===========+=====+========================+==========+=============+
-   | counter   |TBD10|COSE_Countersignature / |          | V2 counter  |
-   | signature |     |[+ COSE_Countersignature|          | signature   |
-   | version 2 |     | ]                      |          | attribute   |
+   |counter    |TBD10|COSE_Countersignature / |          | V2 counter  |
+   |signature  |     |[+ COSE_Countersignature|          | signature   |
+   |version 2  |     |]                       |          | attribute   |
    +-----------+-----+------------------------+----------+-------------+
-   | counter   |TBD11| COSE_Countersignature0 |          | Abbreviated |
+   |counter    |TBD11|COSE_Countersignature0  |          | Abbreviated |
    |signature 0|     |                        |          | Counter     |
-   | version 2 |     |                        |          | signature   |
+   |version 2  |     |                        |          | signature   |
    |           |     |                        |          | vesion 2    |
    +-----------+-----+------------------------+----------+-------------+
 
@@ -270,17 +232,6 @@ Internet-Draft               COSE Structure                 October 2020
          ; V2 Countersignature
          ? TBD11 => COSE_Countersignature0  ; V2 Countersignature0
          )
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 5]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
 3.  Version 2 Countersignatures
 
@@ -330,14 +281,6 @@ Internet-Draft               COSE Structure                 October 2020
    attested to.  It should be noted that there is a big difference
    between attesting to the encrypted data as opposed to attesting to
    the unencrypted data.  If the latter is what is desired, then one
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 6]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    needs to apply a signature to the data and then encrypt that.  It is
    always possible to construct cases where the use of two different
    keys will appear to result in a successful decryption (the tag check
@@ -380,19 +323,6 @@ Internet-Draft               COSE Structure                 October 2020
    countersignatures.  This is because the body should be able to be
    processed without having to evaluate the countersignature, and this
    is not possible for signature schemes with message recovery.
-
-
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 7]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
 3.2.  Abbreviated Countersignatures
 
@@ -441,15 +371,6 @@ Internet-Draft               COSE Structure                 October 2020
           "CounterSignature0V2" for signatures using the
           COSE_Countersignature0 structure when other_fields is present.
 
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 8]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    2.  The protected attributes from the target structure encoded in a
        bstr type.  If there are no protected attributes, a zero-length
        byte string is used.
@@ -496,15 +417,6 @@ Internet-Draft               COSE Structure                 October 2020
    3.  Call the signature creation algorithm passing in K (the key to
        sign with), alg (the algorithm to sign with), and ToBeSigned (the
        value to sign).
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                 [Page 9]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
    4.  Place the resulting signature value in the correct location.
        This is the 'signature' field of the COSE_Countersignature
@@ -553,37 +465,27 @@ Internet-Draft               COSE Structure                 October 2020
 
    *  Reference: [[this document]]
 
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 10]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
 5.2.  COSE Header Parameters Registry
 
    IANA created a registry titled "COSE Header Parameters" as part of
    processing [RFC8152].
 
    IANA is requested to register the following new items in the
-   registry.
+   registry.  For these entries, the Value Registry column will be blank
+   and the Reference column will be [[This Document]].
 
-   +=================+=====+======================+========+================+
-   | Name            |Label| Value Type           | Value  | Description    |
-   |                 |     |                      |Registry|                |
-   +=================+=====+======================+========+================+
-   |counter signature|TBD10|COSE_Countersignature |        | V2             |
-   | version 2       |     | / [+                 |        |countersignature|
-   |                 |     |COSE_Countersignature |        | attribute      |
-   |                 |     | ]                    |        |                |
-   +-----------------+-----+----------------------+--------+----------------+
-   |Countersignature0|TBD11|COSE_Countersignature0|        | Abbreviated    |
-   | version 2       |     |                      |        | Counter        |
-   |                 |     |                      |        |signature vesion|
-   |                 |     |                      |        | 2              |
-   +-----------------+-----+----------------------+--------+----------------+
+   +===================+=====+========================+================+
+   | Name              |Label|Value Type              |Description     |
+   +===================+=====+========================+================+
+   | counter signature |TBD10|COSE_Countersignature / |V2              |
+   | version 2         |     |[+ COSE_Countersignature|countersignature|
+   |                   |     |]                       |attribute       |
+   +-------------------+-----+------------------------+----------------+
+   | Countersignature0 |TBD11|COSE_Countersignature0  |Abbreviated     |
+   | version 2         |     |                        |Counter         |
+   |                   |     |                        |signature vesion|
+   |                   |     |                        |2               |
+   +-------------------+-----+------------------------+----------------+
 
                    Table 2: New Common Header Parameters
 
@@ -592,8 +494,6 @@ Internet-Draft               COSE Structure                 October 2020
    by [[This Document]]".
 
 6.  Security Considerations
-
-   TODO - review and trim as needed.
 
    There are a number of security considerations that need to be taken
    into account by implementers of this specification.  While some
@@ -607,16 +507,6 @@ Internet-Draft               COSE Structure                 October 2020
    *  Using the same key for two different algorithms can leak
       information about the key.  It is therefore recommended that keys
       be restricted to a single algorithm.
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 11]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
    *  Use of 'direct' as a recipient algorithm combined with a second
       recipient algorithm exposes the direct key to the second
@@ -643,14 +533,15 @@ Internet-Draft               COSE Structure                 October 2020
    multiple algorithms has been demonstrated in some cases to leak
    information about that key, provide the opportunity for attackers to
    forge integrity tags, or gain information about encrypted content.
-   Binding a key to a single algorithm prevents these problems.  Key
-   creators and key consumers are strongly encouraged not only to create
-   new keys for each different algorithm, but to include that selection
-   of algorithm in any distribution of key material and strictly enforce
-   the matching of algorithms in the key structure to algorithms in the
-   message structure.  In addition to checking that algorithms are
-   correct, the key form needs to be checked as well.  Do not use an
-   'EC2' key where an 'OKP' key is expected.
+   Binding a key to a single algorithm prevents these problems.
+
+   Key creators and key consumers are strongly encouraged not only to
+   create new keys for each different algorithm, but to include that
+   selection of algorithm in any distribution of key material and
+   strictly enforce the matching of algorithms in the key structure to
+   algorithms in the message structure.  In addition to checking that
+   algorithms are correct, the key form needs to be checked as well.  Do
+   not use an 'EC2' key where an 'OKP' key is expected.
 
    Before using a key for transmission, or before acting on information
    received, a trust decision on a key needs to be made.  Is the data or
@@ -666,14 +557,6 @@ Internet-Draft               COSE Structure                 October 2020
    *  Have the restrictions associated with the key, such as algorithm
       or freshness, been checked and are they correct?
 
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 12]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    *  Is the request something that is reasonable, given the current
       state of the application?
 
@@ -681,17 +564,15 @@ Internet-Draft               COSE Structure                 October 2020
       enforced (as specified by the application or 'crit' header
       parameter)?
 
-   One area that has been getting exposure is traffic analysis of
-   encrypted messages based on the length of the message.  This
-   specification does not provide for a uniform method of providing
-   padding as part of the message structure.  An observer can
-   distinguish between two different messages (for example, 'YES' and
-   'NO') based on the length for all of the content encryption
-   algorithms that are defined in [I-D.ietf-cose-rfc8152bis-algs]
-   document.  This means that it is up to the applications to document
-   how content padding is to be done in order to prevent or discourage
-   such analysis.  (For example, the text strings could be defined as
-   'YES' and 'NO '.)
+   Analysis of the size of encrypted messages can provide information
+   about the plaintext messages.  This specification does not provide a
+   uniform method for padding messages prior to encryption.  An observer
+   can distinguish between two different messages (for example, 'YES'
+   and 'NO') based on the length for all of the content encryption
+   algorithms that are defined in [I-D.ietf-cose-rfc8152bis-algs].  This
+   means that it is up to the applications to specify how content
+   padding is to be done to prevent or discourage such analysis.  (For
+   example, the text strings could be defined as 'YES' and 'NO '.)
 
 7.  Implementation Status
 
@@ -716,19 +597,6 @@ Internet-Draft               COSE Structure                 October 2020
    and feedback that have made the implemented protocols more mature.
    It is up to the individual working groups to use this information as
    they see fit".
-
-
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 13]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
 7.1.  Author's Versions
 
@@ -778,14 +646,6 @@ Internet-Draft               COSE Structure                 October 2020
       dealing with countersignatures, and ECDH with Curve25519 and
       Goldilocks are missing.
 
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 14]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    *  Licensing: Public Domain
 
 8.  References
@@ -831,17 +691,6 @@ Internet-Draft               COSE Structure                 October 2020
 
               <https://www.rfc-editor.org/info/std90>
 
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 15]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    [RFC7252]  Shelby, Z., Hartke, K., and C. Bormann, "The Constrained
               Application Protocol (CoAP)", RFC 7252,
               DOI 10.17487/RFC7252, June 2014,
@@ -860,8 +709,8 @@ Internet-Draft               COSE Structure                 October 2020
               Dijk, E., Wang, C., and M. Tiloca, "Group Communication
               for the Constrained Application Protocol (CoAP)", Work in
               Progress, Internet-Draft, draft-ietf-core-groupcomm-bis-
-              01, 13 July 2020, <https://tools.ietf.org/html/draft-ietf-
-              core-groupcomm-bis-01>.
+              02, 2 November 2020, <https://tools.ietf.org/html/draft-
+              ietf-core-groupcomm-bis-02>.
 
    [I-D.ietf-cose-rfc8152bis-struct]
               Schaad, J., "CBOR Object Signing and Encryption (COSE):
@@ -890,14 +739,6 @@ Appendix A.  Examples
    create the example, some of the intermediate values that can be used
    in debugging the example and the output of the example presented both
    as a hex dump and in CBOR diagnostic notation format.  Some of the
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 16]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    examples at the site are designed failure testing cases; these are
    clearly marked as such in the JSON file.  If errors in the examples
    in this document are found, the examples on GitHub will be updated,
@@ -934,25 +775,6 @@ A.1.1.  Countersignature
       countersignature.
 
    Size of binary file is 180 bytes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 17]
-
-Internet-Draft               COSE Structure                 October 2020
-
 
    98(
      [
@@ -999,17 +821,6 @@ A.2.1.  Countersignature on Encrypted Content
 
    Size of binary file is 326 bytes
 
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 18]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
    96(
      [
        / protected h'a10101' / << {
@@ -1054,20 +865,6 @@ Internet-Draft               COSE Structure                 October 2020
      ]
    )
 
-A.3.  Examples of Encrypted Messages
-
-A.4.  Examples of MACed Messages
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 19]
-
-Internet-Draft               COSE Structure                 October 2020
-
-
-A.5.  Examples of MAC0 Messages
-
 Acknowledgments
 
    This document is a product of the COSE working group of the IETF.
@@ -1096,25 +893,3 @@ Authors' Addresses
    Vigil Security, LLC
 
    Email: housley@vigilsec.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Schaad & Housley          Expires 10 April 2021                [Page 20]
