@@ -14,10 +14,10 @@
         This document defines a countersignature algorithm along with the needed header parameters and CBOR tags for COSE.
        
     " name="description">
-<meta content="xml2rfc 3.2.1" name="generator">
+<meta content="xml2rfc 3.4.0" name="generator">
 <meta content="draft-ietf-cose-countersign-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.2.1
+  xml2rfc 3.4.0
     Python 3.8.5
     appdirs 1.4.4
     ConfigArgParse 1.2.3
@@ -826,7 +826,7 @@ address div.right {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Schaad &amp; Housley</td>
-<td class="center">Expires 20 May 2021</td>
+<td class="center">Expires 25 May 2021</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -837,12 +837,12 @@ address div.right {
 <dd class="workgroup">COSE Working Group</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2020-11-16" class="published">16 November 2020</time>
+<time datetime="2020-11-21" class="published">21 November 2020</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2021-05-20">20 May 2021</time></dd>
+<dd class="expires"><time datetime="2021-05-25">25 May 2021</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -895,7 +895,7 @@ address div.right {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 20 May 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 25 May 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -923,102 +923,102 @@ address div.right {
         <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
 <a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
         </h2>
-<nav class="toc"><ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.1">
+<nav class="toc"><ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.1">
             <p id="section-toc.1-1.1.1"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a><a href="#section-toc.1-1.1.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.1.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.1.2.1">
                 <p id="section-toc.1-1.1.2.1.1" class="keepWithNext"><a href="#section-1.1" class="xref">1.1</a>.  <a href="#name-requirements-terminology" class="xref">Requirements Terminology</a><a href="#section-toc.1-1.1.2.1.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.1.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.1.2.2">
                 <p id="section-toc.1-1.1.2.2.1" class="keepWithNext"><a href="#section-1.2" class="xref">1.2</a>.  <a href="#name-cbor-grammar" class="xref">CBOR Grammar</a><a href="#section-toc.1-1.1.2.2.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.1.2.3">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.1.2.3">
                 <p id="section-toc.1-1.1.2.3.1" class="keepWithNext"><a href="#section-1.3" class="xref">1.3</a>.  <a href="#name-document-terminology" class="xref">Document Terminology</a><a href="#section-toc.1-1.1.2.3.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.2">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.2">
             <p id="section-toc.1-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-countersignature-header-par" class="xref">Countersignature Header Parameters</a><a href="#section-toc.1-1.2.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.3">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.3">
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-version-2-countersignatures" class="xref">Version 2 Countersignatures</a><a href="#section-toc.1-1.3.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.3.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-full-countersignatures" class="xref">Full Countersignatures</a><a href="#section-toc.1-1.3.2.1.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.3.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-abbreviated-countersignatur" class="xref">Abbreviated Countersignatures</a><a href="#section-toc.1-1.3.2.2.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.3.2.3">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-signing-and-verification-pr" class="xref">Signing and Verification Process</a><a href="#section-toc.1-1.3.2.3.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.4">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.4">
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-cbor-encoding-restrictions" class="xref">CBOR Encoding Restrictions</a><a href="#section-toc.1-1.4.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.5">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a><a href="#section-toc.1-1.5.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.5.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.5.2.1">
                 <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="xref">5.1</a>.  <a href="#name-cbor-tag-assignment" class="xref">CBOR Tag Assignment</a><a href="#section-toc.1-1.5.2.1.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.5.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.5.2.2">
                 <p id="section-toc.1-1.5.2.2.1"><a href="#section-5.2" class="xref">5.2</a>.  <a href="#name-cose-header-parameters-regi" class="xref">COSE Header Parameters Registry</a><a href="#section-toc.1-1.5.2.2.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.6">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.6">
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a><a href="#section-toc.1-1.6.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.7">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-implementation-status" class="xref">Implementation Status</a><a href="#section-toc.1-1.7.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.7.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.7.2.1">
                 <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="xref">7.1</a>.  <a href="#name-authors-versions" class="xref">Author's Versions</a><a href="#section-toc.1-1.7.2.1.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.7.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.7.2.2">
                 <p id="section-toc.1-1.7.2.2.1"><a href="#section-7.2" class="xref">7.2</a>.  <a href="#name-cose-testing-library" class="xref">COSE Testing Library</a><a href="#section-toc.1-1.7.2.2.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.8">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.8">
             <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-references" class="xref">References</a><a href="#section-toc.1-1.8.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.8.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.8.2.1">
                 <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="xref">8.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a><a href="#section-toc.1-1.8.2.1.1" class="pilcrow">¶</a></p>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.8.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.8.2.2">
                 <p id="section-toc.1-1.8.2.2.1"><a href="#section-8.2" class="xref">8.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a><a href="#section-toc.1-1.8.2.2.1" class="pilcrow">¶</a></p>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.9">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.9">
             <p id="section-toc.1-1.9.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-examples" class="xref">Examples</a><a href="#section-toc.1-1.9.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.9.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.9.2.1">
                 <p id="section-toc.1-1.9.2.1.1"><a href="#section-a.1" class="xref">A.1</a>.  <a href="#name-examples-of-signed-messages" class="xref">Examples of Signed Messages</a><a href="#section-toc.1-1.9.2.1.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.9.2.1.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.9.2.1.2.1">
                     <p id="section-toc.1-1.9.2.1.2.1.1"><a href="#section-a.1.1" class="xref">A.1.1</a>.  <a href="#name-countersignature" class="xref">Countersignature</a><a href="#section-toc.1-1.9.2.1.2.1.1" class="pilcrow">¶</a></p>
 </li>
                 </ul>
 </li>
-              <li class="ulEmpty compact toc" id="section-toc.1-1.9.2.2">
+              <li class="toc ulEmpty compact" id="section-toc.1-1.9.2.2">
                 <p id="section-toc.1-1.9.2.2.1"><a href="#section-a.2" class="xref">A.2</a>.  <a href="#name-examples-of-enveloped-messa" class="xref">Examples of Enveloped Messages</a><a href="#section-toc.1-1.9.2.2.1" class="pilcrow">¶</a></p>
-<ul class="ulEmpty compact toc">
-<li class="ulEmpty compact toc" id="section-toc.1-1.9.2.2.2.1">
+<ul class="toc ulEmpty compact">
+<li class="toc ulEmpty compact" id="section-toc.1-1.9.2.2.2.1">
                     <p id="section-toc.1-1.9.2.2.2.1.1"><a href="#section-a.2.1" class="xref">A.2.1</a>.  <a href="#name-countersignature-on-encrypt" class="xref">Countersignature on Encrypted Content</a><a href="#section-toc.1-1.9.2.2.2.1.1" class="pilcrow">¶</a></p>
 </li>
                 </ul>
 </li>
             </ul>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.10">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.10">
             <p id="section-toc.1-1.10.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-acknowledgments" class="xref">Acknowledgments</a><a href="#section-toc.1-1.10.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="ulEmpty compact toc" id="section-toc.1-1.11">
+          <li class="toc ulEmpty compact" id="section-toc.1-1.11">
             <p id="section-toc.1-1.11.1"><a href="#section-appendix.c" class="xref"></a><a href="#name-authors-addresses" class="xref">Authors' Addresses</a><a href="#section-toc.1-1.11.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
@@ -1216,8 +1216,8 @@ COSE_Countersignature = COSE_Signature
 <p id="section-3.1-4">
           The details of the fields of a countersignature can be found in <span><a href="https://tools.ietf.org/html/draft-ietf-cose-rfc8152bis-struct-14#section-4.1" class="relref">Section 4.1</a> of [<a href="#I-D.ietf-cose-rfc8152bis-struct" class="xref">I-D.ietf-cose-rfc8152bis-struct</a>]</span>.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <p id="section-3.1-5">          
-          An example of a countersignature on a signature can be found in <a href="#Appendix_B_1_3" class="xref">Appendix A.1.1</a>. 
-          An example of a countersignature in an encryption object can be found in <a href="#Appendix_B_3_3" class="xref">Appendix A.2.1</a>.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
+          An example of a countersignature on a signature can be found in <a href="#Appendix_A_1_1" class="xref">Appendix A.1.1</a>. 
+          An example of a countersignature in an encryption object can be found in <a href="#Appendix_A_2_1" class="xref">Appendix A.2.1</a>.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
 <p id="section-3.1-6">
           It should be noted that only a signature algorithm with appendix (see <span><a href="https://tools.ietf.org/html/draft-ietf-cose-rfc8152bis-struct-14#section-8" class="relref">Section 8</a> of [<a href="#I-D.ietf-cose-rfc8152bis-struct" class="xref">I-D.ietf-cose-rfc8152bis-struct</a>]</span>) can be used for countersignatures. 
           This is because the body should be able to be processed without having to evaluate the countersignature, and this is not possible for signature schemes with message recovery.<a href="#section-3.1-6" class="pilcrow">¶</a></p>
@@ -1618,30 +1618,28 @@ Countersign_structure = [
 <a href="#section-appendix.a" class="section-number selfRef">Appendix A. </a><a href="#name-examples" class="section-name selfRef">Examples</a>
       </h2>
 <p id="section-appendix.a-1">This appendix includes a set of examples that show the different features and message types that have been defined in this document.  To make the examples easier to read, they are presented using the extended CBOR diagnostic notation (defined in <span>[<a href="#RFC8610" class="xref">RFC8610</a>]</span>) rather than as a binary dump.<a href="#section-appendix.a-1" class="pilcrow">¶</a></p>
-<p id="section-appendix.a-2">
-        A GitHub project has been created at &lt;https://github.com/cose-wg/Examples&gt; that contains not only the examples presented in this document, but a more complete set of testing examples as well.
-        Each example is found in a JSON file that contains the inputs used to create the example, some of the intermediate values that can be used in debugging the example and the output of the example presented both as a hex dump and in CBOR diagnostic notation format.
-        Some of the examples at the site are designed failure testing cases; these are clearly marked as such in the JSON file.
-        If errors in the examples in this document are found, the examples on GitHub will be updated, and a note to that effect will be placed in the JSON file.<a href="#section-appendix.a-2" class="pilcrow">¶</a></p>
-<p id="section-appendix.a-3">As noted, the examples are presented using the CBOR's diagnostic notation.  A Ruby-based tool exists that can convert between the diagnostic notation and binary.  This tool can be installed with the command line:<a href="#section-appendix.a-3" class="pilcrow">¶</a></p>
-<div id="section-appendix.a-4">
-<pre class="sourcecode">gem install cbor-diag</pre><a href="#section-appendix.a-4" class="pilcrow">¶</a>
+<p id="section-appendix.a-2">The examples are presented using the CBOR's diagnostic notation.  A Ruby-based tool exists that can convert between the diagnostic notation and binary.  This tool can be installed with the command line:<a href="#section-appendix.a-2" class="pilcrow">¶</a></p>
+<div id="section-appendix.a-3">
+<pre class="sourcecode">gem install cbor-diag
+</pre><a href="#section-appendix.a-3" class="pilcrow">¶</a>
 </div>
-<p id="section-appendix.a-5">The diagnostic notation can be converted into binary files using the following command line:<a href="#section-appendix.a-5" class="pilcrow">¶</a></p>
-<div id="section-appendix.a-6">
+<p id="section-appendix.a-4">The diagnostic notation can be converted into binary files using the following command line:<a href="#section-appendix.a-4" class="pilcrow">¶</a></p>
+<div id="section-appendix.a-5">
 <pre class="sourcecode">diag2cbor.rb &lt; inputfile &gt; outputfile
-</pre><a href="#section-appendix.a-6" class="pilcrow">¶</a>
+
+</pre><a href="#section-appendix.a-5" class="pilcrow">¶</a>
 </div>
-<p id="section-appendix.a-7">The examples can be extracted from the XML version of this document via an XPath expression as all of the sourcecode is tagged with the attribute type='CBORdiag'.  (Depending on the XPath evaluator one is using, it may be necessary to deal with &amp;gt; as an entity.)<a href="#section-appendix.a-7" class="pilcrow">¶</a></p>
-<div id="section-appendix.a-8">
-<pre class="sourcecode lang-XPATH">//sourcecode[@type='CDDL']/text()</pre><a href="#section-appendix.a-8" class="pilcrow">¶</a>
+<p id="section-appendix.a-6">The examples can be extracted from the XML version of this document via an XPath expression as all of the sourcecode is tagged with the attribute type='CBORdiag'.  (Depending on the XPath evaluator one is using, it may be necessary to deal with &amp;gt; as an entity.)<a href="#section-appendix.a-6" class="pilcrow">¶</a></p>
+<div id="section-appendix.a-7">
+<pre class="sourcecode lang-XPATH">//sourcecode[@type='CDDL']/text()
+</pre><a href="#section-appendix.a-7" class="pilcrow">¶</a>
 </div>
 <div id="SignedExamples">
 <section id="section-a.1">
         <h2 id="name-examples-of-signed-messages">
 <a href="#section-a.1" class="section-number selfRef">A.1. </a><a href="#name-examples-of-signed-messages" class="section-name selfRef">Examples of Signed Messages</a>
         </h2>
-<div id="Appendix_B_1_3">
+<div id="Appendix_A_1_1">
 <section id="section-a.1.1">
           <h3 id="name-countersignature">
 <a href="#section-a.1.1" class="section-number selfRef">A.1.1. </a><a href="#name-countersignature" class="section-name selfRef">Countersignature</a>
@@ -1688,6 +1686,7 @@ Countersign_structure = [
     ]
   ]
 )
+
 </pre><a href="#section-a.1.1-4" class="pilcrow">¶</a>
 </div>
 </section>
@@ -1699,7 +1698,7 @@ Countersign_structure = [
         <h2 id="name-examples-of-enveloped-messa">
 <a href="#section-a.2" class="section-number selfRef">A.2. </a><a href="#name-examples-of-enveloped-messa" class="section-name selfRef">Examples of Enveloped Messages</a>
         </h2>
-<div id="Appendix_B_3_3">
+<div id="Appendix_A_2_1">
 <section id="section-a.2.1">
           <h3 id="name-countersignature-on-encrypt">
 <a href="#section-a.2.1" class="section-number selfRef">A.2.1. </a><a href="#name-countersignature-on-encrypt" class="section-name selfRef">Countersignature on Encrypted Content</a>
@@ -1757,6 +1756,7 @@ bf054e1c7b4d91d6280',
     ]
   ]
 )
+
 </pre><a href="#section-a.2.1-4" class="pilcrow">¶</a>
 </div>
 </section>

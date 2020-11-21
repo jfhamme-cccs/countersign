@@ -5,8 +5,8 @@
 COSE Working Group                                             J. Schaad
 Internet-Draft                                            August Cellars
 Intended status: Standards Track                         R. Housley, Ed.
-Expires: 20 May 2021                                      Vigil Security
-                                                        16 November 2020
+Expires: 25 May 2021                                      Vigil Security
+                                                        21 November 2020
 
 
       CBOR Object Signing and Encryption (COSE): Countersignatures
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 May 2021.
+   This Internet-Draft will expire on 25 May 2021.
 
 Copyright Notice
 
@@ -732,22 +732,10 @@ Appendix A.  Examples
    extended CBOR diagnostic notation (defined in [RFC8610]) rather than
    as a binary dump.
 
-   A GitHub project has been created at <https://github.com/cose-wg/
-   Examples> that contains not only the examples presented in this
-   document, but a more complete set of testing examples as well.  Each
-   example is found in a JSON file that contains the inputs used to
-   create the example, some of the intermediate values that can be used
-   in debugging the example and the output of the example presented both
-   as a hex dump and in CBOR diagnostic notation format.  Some of the
-   examples at the site are designed failure testing cases; these are
-   clearly marked as such in the JSON file.  If errors in the examples
-   in this document are found, the examples on GitHub will be updated,
-   and a note to that effect will be placed in the JSON file.
-
-   As noted, the examples are presented using the CBOR's diagnostic
-   notation.  A Ruby-based tool exists that can convert between the
-   diagnostic notation and binary.  This tool can be installed with the
-   command line:
+   The examples are presented using the CBOR's diagnostic notation.  A
+   Ruby-based tool exists that can convert between the diagnostic
+   notation and binary.  This tool can be installed with the command
+   line:
 
    gem install cbor-diag
 
