@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2020-11-19T00:09:53.388589+00:00",
+  "timestamp": "2020-11-22T00:10:54.478992+00:00",
   "repo": "cose-wg/countersign",
   "labels": [
     {
@@ -49,7 +49,32 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 3,
+      "id": "MDU6SXNzdWU3NDgwNjUwNDI=",
+      "title": "GitHub Examples repository",
+      "url": "https://github.com/cose-wg/countersign/issues/3",
+      "state": "CLOSED",
+      "author": "russhousley",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I cannot find the existing examples from the document in the GitHub Examples repository, despite Appendix A saying that they are there.",
+      "createdAt": "2020-11-21T17:42:10Z",
+      "updatedAt": "2020-11-21T17:56:36Z",
+      "closedAt": "2020-11-21T17:56:36Z",
+      "comments": [
+        {
+          "author": "russhousley",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I removed the pointer to GitHub.",
+          "createdAt": "2020-11-21T17:56:36Z",
+          "updatedAt": "2020-11-21T17:56:36Z"
+        }
+      ]
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -91,13 +116,13 @@
       "labels": [],
       "body": "Remove the sections from the Examples Applenix that were blank, clean up the Security Considerations, and narrow the table in the IANA considerations.",
       "createdAt": "2020-11-16T10:27:17Z",
-      "updatedAt": "2020-11-16T10:27:17Z",
+      "updatedAt": "2020-11-21T17:56:08Z",
       "baseRepository": "cose-wg/countersign",
       "baseRefName": "main",
       "baseRefOid": "a83d32177b26acac684baf31a778028ae7a17f7d",
       "headRepository": "cose-wg/countersign",
       "headRefName": "fewer_examples",
-      "headRefOid": "6f026546c835fccc32bb87edd654e1d8c72114cf",
+      "headRefOid": "35ca656f68c6ddd6d908bdd1c632b9b2913fe01c",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
